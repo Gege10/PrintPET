@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="bootstrap-5.0.2-dist/css/bootstrap.min.css" rel="stylesheet">
+  <title>PrintPET</title>
+  <style>
+    model-viewer{
+      margin: auto;
+      height: 200px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <div class="container">
+    <header class="d-flex justify-content-center py-3">
+      <ul class="nav nav-pills">
+        <li class="nav-item"><a href="index.html" class="nav-link" aria-current="page">Accueil</a></li>
+        <li class="nav-item"><a href="procedure.html" class="nav-link">Déroulement</a></li>
+        <li class="nav-item"><a href="files.html" class="nav-link active">Fichiers</a></li>
+        <li class="nav-item"><a href="about.html" class="nav-link">À propos</a></li>
+      </ul>
+    </header>
+  </div>
+  
+  <div class="px-4 pt-5 my-5 text-center border-bottom">
+    <h1 class="display-4 fw-bold">Téléchargements</h1>
+
+    <div class="col-lg-6 mx-auto">
+      <p>
+        Vous trouverez ici tous les fichiers nécessaires à la réalisation de notre projet.
+        Des fichiers 3D (qui sont au format .stl) jusqu'aux schémas électroniques de notre appareil.
+      </p>
+
+      <table class="table table-hover">
+        <thead>
+          <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Aperçu</th>
+            <th scope="col">Téléchargement</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <!-- Attache -->
+          <div>
+            <tr>
+              <td width="40%">Attache</td>
+              <td width="30%">
+                <button class="btn btn-secondary previewButton" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Show image</button>
+              </td>
+              <td width="30%">
+                <a href="3dModelsToDownload/attache2.0.stl" class="btn btn-primary" download="">Download</a>
+              </td>
+            </tr>
+            <tr id="collapseOne" class="accordion-collapse collapse">
+              <td colspan="3">
+                <model-viewer auto-rotate alt="" src="3dModelsToShow/attache2.0.gltf" shadow-intensity="1" shadow-softness="1" camera-controls touch-action="pan-y" generate-schema loading="eager"></model-viewer>
+              </td>
+            </tr>
+          </div>
+
+          <!-- Bobine -->
+          <div>
+            <tr>
+              <td width="40%">Bobine</td>
+              <td width="30%">
+                <button class="btn btn-secondary previewButton" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">Show image</button>
+              </td>
+              <td width="30%">
+                <a href="3dModelsToDownload/Bobine.stl" class="btn btn-primary" download="">Download</a>
+              </td>
+            </tr>
+            <tr id="collapseTwo" class="accordion-collapse collapse">
+              <td colspan="3">
+                <model-viewer auto-rotate alt="" src="3dModelsToShow/Bobine.gltf" shadow-intensity="1" shadow-softness="1" camera-controls touch-action="pan-y" generate-schema loading="eager"></model-viewer>
+              </td>
+            </tr>
+          </div>
+
+          <!-- Engrenage cylindrique 1 -->
+          <div>
+            <tr>
+              <td width="40%">Engrenage cylindrique n°1</td>
+              <td width="30%">
+                <button class="btn btn-secondary previewButton" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">Show image</button>
+              </td>
+              <td width="30%">
+                <a href="3dModelsToDownload/Engrenage cylindrique11.stl" class="btn btn-primary" download="">Download</a>
+              </td>
+            </tr>
+            <tr id="collapseThree" class="accordion-collapse collapse">
+              <td colspan="3">
+                <model-viewer auto-rotate alt="" src="3dModelsToShow/Engrenage cylindrique11.gltf" shadow-intensity="1" shadow-softness="1" camera-controls touch-action="pan-y" generate-schema loading="eager"></model-viewer>
+              </td>
+            </tr>
+          </div>
+
+          <!-- Engrenage cylindrique 2 -->
+          <div>
+            <tr>
+              <td width="40%">Engrenage cylindrique n°2</td>
+              <td width="30%">
+                <button class="btn btn-secondary previewButton" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">Show image</button>
+              </td>
+              <td width="30%">
+                <a href="3dModelsToDownload/Engrenage cylindrique21.stl" class="btn btn-primary" download="">Download</a>
+              </td>
+            </tr>
+            <tr id="collapseFour" class="accordion-collapse collapse">
+              <td colspan="3">
+                <model-viewer auto-rotate alt="" src="3dModelsToShow/Engrenage cylindrique21.gltf" shadow-intensity="1" shadow-softness="1" camera-controls touch-action="pan-y" generate-schema loading="eager"></model-viewer>
+              </td>
+            </tr>
+          </div>
+
+          <!-- Engrenage cylindrique 3 -->
+          <div>
+            <tr>
+              <td width="40%">Engrenage cylindrique n°3</td>
+              <td width="30%">
+                <button class="btn btn-secondary previewButton" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">Show image</button>
+              </td>
+              <td width="30%">
+                <a href="3dModelsToDownload/Engrenage cylindrique22.stl" class="btn btn-primary" download="">Download</a>
+              </td>
+            </tr>
+            <tr id="collapseFive" class="accordion-collapse collapse">
+              <td colspan="3">
+                <model-viewer auto-rotate alt="" src="3dModelsToShow/Engrenage cylindrique22.gltf" shadow-intensity="1" shadow-softness="1" camera-controls touch-action="pan-y" generate-schema loading="eager"></model-viewer>
+              </td>
+            </tr>
+          </div>
+
+          <!-- Engrenage cylindrique 4 -->
+          <div>
+            <tr>
+              <td width="40%">Engrenages cylindriques</td>
+              <td width="30%">
+                <button class="btn btn-secondary previewButton" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="true" aria-controls="collapseSix">Show image</button>
+              </td>
+              <td width="30%">
+                <a href="3dModelsToDownload/Engrenages cylindriques3_Engrenage cylindrique23.stl" class="btn btn-primary" download="">Download</a>
+              </td>
+            </tr>
+            <tr id="collapseSix" class="accordion-collapse collapse">
+              <td colspan="3">
+                <model-viewer auto-rotate alt="" src="3dModelsToShow/Engrenages cylindriques3_Engrenage cylindrique23.gltf" shadow-intensity="1" shadow-softness="1" camera-controls touch-action="pan-y" generate-schema loading="eager"></model-viewer>
+              </td>
+            </tr>
+          </div>
+
+          <!-- Maintien -->
+          <div>
+            <tr>
+              <td width="40%">Maintien</td>
+              <td width="30%">
+                <button class="btn btn-secondary previewButton" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="true" aria-controls="collapseSeven">Show image</button>
+              </td>
+              <td width="30%">
+                <a href="3dModelsToDownload/maintien1.stl" class="btn btn-primary" download="">Download</a>
+              </td>
+            </tr>
+            <tr id="collapseSeven" class="accordion-collapse collapse">
+              <td colspan="3">
+                <model-viewer auto-rotate alt="" src="3dModelsToShow/maintien1.gltf" shadow-intensity="1" shadow-softness="1" camera-controls touch-action="pan-y" generate-schema loading="eager"></model-viewer>
+              </td>
+            </tr>
+          </div>
+
+          <!-- Pièce cylindrique supp bobine -->
+          <div>
+            <tr>
+              <td width="40%">Pièce cylindrique support de bobine</td>
+              <td width="30%">
+                <button class="btn btn-secondary previewButton" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="true" aria-controls="collapseEight">Show image</button>
+              </td>
+              <td width="30%">
+                <a href="3dModelsToDownload/piece cylindrique supp bobine.stl" class="btn btn-primary" download="">Download</a>
+              </td>
+            </tr>
+            <tr id="collapseEight" class="accordion-collapse collapse">
+              <td colspan="3">
+                <model-viewer auto-rotate alt="" src="3dModelsToShow/piece cylindrique supp bobine.gltf" shadow-intensity="1" shadow-softness="1" camera-controls touch-action="pan-y" generate-schema loading="eager"></model-viewer>
+              </td>
+            </tr>
+          </div>
+
+          <!-- Pièce de découpe -->
+          <div>
+            <tr>
+              <td width="40%">Pièce de découpe</td>
+              <td width="30%">
+                <button class="btn btn-secondary previewButton" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="true" aria-controls="collapseNine">Show image</button>
+              </td>
+              <td width="30%">
+                <a href="3dModelsToDownload/Pièce découpe bouteille.stl" class="btn btn-primary" download="">Download</a>
+              </td>
+            </tr>
+            <tr id="collapseNine" class="accordion-collapse collapse">
+              <td colspan="3">
+                <model-viewer auto-rotate alt="" src="3dModelsToShow/Pièce découpe bouteille.gltf" shadow-intensity="1" shadow-softness="1" camera-controls touch-action="pan-y" generate-schema loading="eager"></model-viewer>
+              </td>
+            </tr>
+          </div>
+
+          <!-- Pièce équerre -->
+          <div>
+            <tr>
+              <td width="40%">Pièce équerre</td>
+              <td width="30%">
+                <button class="btn btn-secondary previewButton" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTen" aria-expanded="true" aria-controls="collapseTen">Show image</button>
+              </td>
+              <td width="30%">
+                <a href="3dModelsToDownload/Pièce equerre.stl" class="btn btn-primary" download="">Download</a>
+              </td>
+            </tr>
+            <tr id="collapseTen" class="accordion-collapse collapse">
+              <td colspan="3">
+                <model-viewer auto-rotate alt="" src="3dModelsToShow/Pièce equerre.gltf" shadow-intensity="1" shadow-softness="1" camera-controls touch-action="pan-y" generate-schema loading="eager"></model-viewer>
+              </td>
+            </tr>
+          </div>
+
+          <!-- Pièce équerre MIR -->
+          <div>
+            <tr>
+              <td width="40%">Pièce équerre miroir</td>
+              <td width="30%">
+                <button class="btn btn-secondary previewButton" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEleven" aria-expanded="true" aria-controls="collapseEleven">Show image</button>
+              </td>
+              <td width="30%">
+                <a href="3dModelsToDownload/Pièce equerre_MIR.stl" class="btn btn-primary" download="">Download</a>
+              </td>
+            </tr>
+            <tr id="collapseEleven" class="accordion-collapse collapse">
+              <td colspan="3">
+                <model-viewer auto-rotate alt="" src="3dModelsToShow/Pièce equerre_MIR.gltf" shadow-intensity="1" shadow-softness="1" camera-controls touch-action="pan-y" generate-schema loading="eager"></model-viewer>
+              </td>
+            </tr>
+          </div>
+
+          <!-- Support bobine -->
+          <div>
+            <tr>
+              <td width="40%">Support bobine</td>
+              <td width="30%">
+                <button class="btn btn-secondary previewButton" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwelve" aria-expanded="true" aria-controls="collapseTwelve">Show image</button>
+              </td>
+              <td width="30%">
+                <a href="3dModelsToDownload/support bobine.stl" class="btn btn-primary" download="">Download</a>
+              </td>
+            </tr>
+            <tr id="collapseTwelve" class="accordion-collapse collapse">
+              <td colspan="3">
+                <model-viewer auto-rotate alt="" src="3dModelsToShow/support bobine.gltf" shadow-intensity="1" shadow-softness="1" camera-controls touch-action="pan-y" generate-schema loading="eager"></model-viewer>
+              </td>
+            </tr>
+          </div>
+
+          <!-- Support bobine MIR -->
+          <div>
+            <tr>
+              <td width="40%">Support bobine miroir</td>
+              <td width="30%">
+                <button class="btn btn-secondary previewButton" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThirteen" aria-expanded="true" aria-controls="collapseThirteen">Show image</button>
+              </td>
+              <td width="30%">
+                <a href="3dModelsToDownload/support bobine_MIR.stl" class="btn btn-primary" download="">Download</a>
+              </td>
+            </tr>
+            <tr id="collapseThirteen" class="accordion-collapse collapse">
+              <td colspan="3">
+                <model-viewer auto-rotate alt="" src="3dModelsToShow/support bobine_MIR.gltf" shadow-intensity="1" shadow-softness="1" camera-controls touch-action="pan-y" generate-schema loading="eager"></model-viewer>
+              </td>
+            </tr>
+          </div>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="container">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+      <p class="col-md-4 mb-0 text-muted">© 2023 Gianni, Ismaël, Nathan, Sarah</p>
+    
+      <ul class="nav col-md-4 justify-content-end">
+        <li class="nav-item"><a href="index.html" class="nav-link px-2 text-muted">Accueil</a></li>
+        <li class="nav-item"><a href="procedure.html" class="nav-link px-2 text-muted">Marche à suivre</a></li>
+        <li class="nav-item"><a href="files.html" class="nav-link px-2 text-muted">Fichiers</a></li>
+        <li class="nav-item"><a href="about.html" class="nav-link px-2 text-muted">À propos</a></li>
+      </ul>
+    </footer>
+  </div>
+  
+  <script src="bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+  <script src="files.js"></script>
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+</body>
+</html>

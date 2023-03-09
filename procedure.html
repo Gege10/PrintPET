@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="bootstrap-5.0.2-dist/css/bootstrap.min.css" rel="stylesheet">
+  <title>PrintPET</title>
+  <style>
+    model-viewer{
+      margin: auto;
+      height: 200px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <div class="container">
+    <header class="d-flex justify-content-center py-3">
+      <ul class="nav nav-pills">
+        <li class="nav-item"><a href="index.html" class="nav-link" aria-current="page">Accueil</a></li>
+        <li class="nav-item"><a href="procedure.html" class="nav-link active">Déroulement</a></li>
+        <li class="nav-item"><a href="files.html" class="nav-link">Fichiers</a></li>
+        <li class="nav-item"><a href="about.html" class="nav-link">À propos</a></li>
+      </ul>
+    </header>
+  </div>
+
+  <div class="px-4 pt-5 my-5 text-center border-bottom">
+    <h1 class="display-4 fw-bold">Déroulement</h1>
+    <div class="col-lg-6 mx-auto">
+        <h2 class="fw-bold">1. Schéma bloc</h2>
+        <div class="overflow-hidden" style="max-height: 100vh;">
+          <div class="container px-5">
+              <img src="Images/SchemaBloc.png" class="img-fluid border rounded-3 mb-4" alt="Schéma bloc" width="700" height="500">
+          </div>
+        </div>
+        <p class="mb-4">
+          Voici le schéma bloc qui permet d'avoir un aperçu de tout ce qui se passe dans notre appareil. Avec ça vous pouvez déjà vous faire une idée de quoi il est composé.
+        </p>
+
+        <h2 class="fw-bold">2. Schéma électronique alimentation</h2>
+        <div class="overflow-hidden" style="max-height: 100vh;">
+          <div class="container px-5">
+              <img src="Images/SchemaAlimentation.png" class="img-fluid border rounded-3 mb-4" alt="Schéma bloc" width="700" height="500">
+          </div>
+        </div>
+        <p class="mb-4">
+          Voici le schéma de l'alimentation. La tête de chauffe a besoin de 24V et de 1.6A. L'Arduino lui, doit être alimenté avec une tension de 3.3V à 20V. Nous avons donc utilisé un convertisseur TRACO e étant capable de recevoir entre 18V et 36V et sortant 5V 3A de manière stable.
+        </p>
+
+        <h2 class="fw-bold">3. Schéma électronique driver et moteur</h2>
+        <div class="overflow-hidden" style="max-height: 100vh;">
+          <div class="container px-5">
+              <img src="Images/SchemaDriverMotor.png" class="img-fluid border rounded-3 mb-4" alt="Schéma bloc" width="700" height="500">
+          </div>
+        </div>
+        <p class="mb-4">
+          Ici, on a le schéma pour contrôler le moteur. On utilise un driver car notre arduino ne peut pas fournir un courant assez puissant pour faire tourner le moteur.
+        </p>
+
+        <h2 class="fw-bold">4. Schéma électronique régulation</h2>
+        <div class="overflow-hidden" style="max-height: 100vh;">
+          <div class="container px-5">
+              <img src="Images/SchemaRegulation.png" class="img-fluid border rounded-3 mb-4" alt="Schéma bloc" width="700" height="500">
+          </div>
+        </div>
+        <p class="mb-4">
+          Ceci est le schéma pour pouvoir réguler la température en alimentant ou pas la tête de chauffe. Dans le code on l'alimente jusqu'à qu'elle atteigne une certaine température, ensuite on la coupe jusqu'à qu'elle baisse et ainsi de suite.
+        </p>
+
+        <h2 class="fw-bold">5. Schéma électronique sonde de température</h2>
+        <div class="overflow-hidden" style="max-height: 100vh;">
+          <div class="container px-5">
+              <img src="Images/SchemaMesureTemp.png" class="img-fluid border rounded-3 mb-4" alt="Schéma bloc" width="700" height="500">
+          </div>
+        </div>
+        <p class="mb-4">
+          Ce schéma représente notre sonde et ses branchements à l'Arduino pour pouvoir récupérer la température actuelle de chauffe.
+        </p>
+
+        <h2 class="fw-bold">6. Schéma électronique complet</h2>
+        <div class="overflow-hidden" style="max-height: 100vh;">
+          <div class="container px-5">
+              <img src="Images/SchemaComplet.png" class="img-fluid border rounded-3 mb-4" alt="Schéma bloc" width="700" height="500">
+          </div>
+        </div>
+        <p class="mb-4">
+          Voici le schéma complet qu'on obtient après avoir assemblé tous les précédent schémas électroniques. Il va nous permettre de créer le fichier de routage pour la fabrication du PCB.
+        </p>
+
+        <h2 class="fw-bold">7. Schéma de routage</h2>
+        <div class="overflow-hidden" style="max-height: 100vh;">
+          <div class="container px-5">
+              <img src="Images/SchemaRoutage.png" class="img-fluid border rounded-3 mb-4" alt="Schéma bloc" width="700" height="500">
+          </div>
+        </div>
+        <p class="mb-4">
+          Voilà ce qu'on a obtenu après avoir réalisé le routage pour ensuite créer un PCB.
+        </p>
+
+        <h2 class="fw-bold">8. PCB monté et fonctionnel</h2>
+        <div class="overflow-hidden" style="max-height: 100vh;">
+          <div class="container px-5">
+              <img src="Images/MontagePCB.jpg" class="img-fluid border rounded-3 mb-4" alt="Schéma bloc" width="700" height="500">
+          </div>
+        </div>
+        <p class="mb-4">
+          Notre PCB ressemble ensuite à ça une fois tous les branchements réalisés.
+        </p>
+        
+        <h2 class="fw-bold">9. Dispositif pour couper les bouteilles</h2>
+        <div class="overflow-hidden" style="max-height: 100vh;">
+          <div class="container px-5">
+            <model-viewer auto-rotate alt="" src="3dModelsToShow/Pièce découpe bouteille.gltf" shadow-intensity="1" shadow-softness="1" camera-controls touch-action="pan-y" generate-schema loading="eager"></model-viewer>
+          </div>
+        </div>
+        <p class="mb-4">
+          Voici la pièce qui permet de couper les bouteilles. Elle fonctionne avec des roulements à billes qui ont été usinés sur les bords pour les rendre coupants.
+        </p>
+    </div>
+  </div>
+  
+  <!-- Footer -->
+  <div class="container">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+      <p class="col-md-4 mb-0 text-muted">© 2023 Gianni, Ismaël, Nathan, Sarah</p>
+  
+      <ul class="nav col-md-4 justify-content-end">
+        <li class="nav-item"><a href="index.html" class="nav-link px-2 text-muted">Accueil</a></li>
+        <li class="nav-item"><a href="procedure.html" class="nav-link px-2 text-muted">Marche à suivre</a></li>
+        <li class="nav-item"><a href="files.html" class="nav-link px-2 text-muted">Fichiers</a></li>
+        <li class="nav-item"><a href="about.html" class="nav-link px-2 text-muted">À propos</a></li>
+      </ul>
+    </footer>
+  </div>
+  
+  <script src="bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+</body>
+</html>
